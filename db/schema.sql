@@ -12,7 +12,7 @@ CREATE TABLE fighters (
     photo TEXT,
     is_your_character BOOLEAN DEFAULT false,
     difficulty INT DEFAULT 1,
-    HP INT DEFAULT 10000,
+    hp INT DEFAULT 10000,
     character_type VARCHAR(20)
 );
 
