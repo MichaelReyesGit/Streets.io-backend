@@ -1,3 +1,5 @@
+\c streets_dev
+
 INSERT INTO fighters (name, photo, is_your_character, difficulty, hp, character_type)
 VALUES 
 ('Marisa', 'https://static.wikia.nocookie.net/streetfighter/images/1/17/SF6_Marisa.png/revision/latest/scale-to-width-down/1000?cb=20221209022823', true, 1, 10100, 'brawler');
