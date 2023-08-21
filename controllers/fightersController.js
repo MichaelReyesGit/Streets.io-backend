@@ -21,6 +21,7 @@ router.get("/", async (req, res) => {
   if (Array.isArray(allFighters)) {
     res.json(allFighters);
   } else {
+    console.log(allFighters);
     res.status(500).json({ error: "Server error" });
   }
 });
@@ -33,7 +34,7 @@ router.get("/:id", async (req, res) => {
   if (fighter.length === 0) {
     res.status(404).json({ error: "not found" });
   } else {
-    res.json(pet[0]);
+    res.json(fighter[0]);
   }
 });
 

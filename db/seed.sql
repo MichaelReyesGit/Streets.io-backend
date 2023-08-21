@@ -1,8 +1,11 @@
 \c streets_dev
 
-INSERT INTO fighters (name, photo, is_your_character, difficulty, hp, character_type)
+INSERT INTO 
+    fighters(name, photo, is_your_character, difficulty, hp, character_type)
 VALUES 
-('Marisa', 'https://static.wikia.nocookie.net/streetfighter/images/1/17/SF6_Marisa.png/revision/latest/scale-to-width-down/1000?cb=20221209022823', true, 1, 10100, 'brawler');
+    ('Marisa', 'https://static.wikia.nocookie.net/streetfighter/images/1/17/SF6_Marisa.png/revision/latest/scale-to-width-down/1000?cb=20221209022823', true, 1, 10100, 'brawler'),
+    ('Ken', 'https://static.wikia.nocookie.net/streetfighter/images/1/14/Ken_SF6_Render.png/revision/latest/scale-to-width-down/1000?cb=20220915164810', false, 2, 10000, 'shoto'),
+    ('Jamie', 'https://static.wikia.nocookie.net/streetfighter/images/5/53/Sf6-jamie.png/revision/latest/scale-to-width-down/1000?cb=20220603005517', true, 4, 10000, 'rushdown');
 
 
 INSERT INTO moves (fighter_id, move_type, on_hit_frame_data, on_block_frame_data)
