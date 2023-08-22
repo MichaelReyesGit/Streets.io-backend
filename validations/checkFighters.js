@@ -18,8 +18,8 @@ const checkBoolean = (req, res, next) => {
 
 const validateURL = (req, res, next) => {
   if (
-    req.body.url.substring(0, 7) === "http://" ||
-    req.body.url.substring(0, 8) === "https://"
+    req.body.photo.substring(0, 7) === "http://" ||
+    req.body.photo.substring(0, 8) === "https://"
   ) {
     return next();
   } else {
